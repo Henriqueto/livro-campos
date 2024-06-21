@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('imagens/campo.jpeg'); 
+    background-size: 100% 100%; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.897); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 60%;
+    max-width: 600px;
+    max-height: 80vh; 
+    overflow-y: auto; 
+}
+
+h1 {
+    margin-bottom: 20px; 
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #39393a;
+    color: white;
+    transform: scale(1.00);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .navigation button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
